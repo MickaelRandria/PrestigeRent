@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrestigeRent — Location courte durée Bordeaux</title>
-    
+    <title>PrestigeRent — Location courte durée de locaux commerciaux à Bordeaux</title>
+    <meta name="description" content="PrestigeRent prend à bail vos locaux commerciaux à Bordeaux et les exploite en location courte durée. Loyer garanti à date fixe, zéro gestion de votre côté. Premier échange gratuit.">
+    <meta name="keywords" content="location courte durée local commercial Bordeaux, bail commercial Airbnb Bordeaux, gestion locative courte durée, loyer garanti Bordeaux">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PrestigeRent — Emmy Bernardin">
+    <link rel="canonical" href="https://www.prestigerent.fr/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.prestigerent.fr/">
+    <meta property="og:title" content="PrestigeRent — Loyer garanti, zéro gestion">
+    <meta property="og:description" content="Confiez votre local commercial à PrestigeRent. Nous l'exploitons en location courte durée et vous versons un loyer fixe chaque mois. 100% légal, 0% de gestion de votre côté.">
+    <meta property="og:image" content="https://www.prestigerent.fr/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="PrestigeRent">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PrestigeRent — Loyer garanti, zéro gestion">
+    <meta name="twitter:description" content="Confiez votre local commercial à PrestigeRent. Loyer garanti à date fixe, gestion totale, 100% légal.">
+    <meta name="twitter:image" content="https://www.prestigerent.fr/og-image.jpg">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "PrestigeRent",
+      "description": "Gestion locative courte durée de locaux commerciaux à Bordeaux. Loyer garanti, zéro gestion.",
+      "url": "https://www.prestigerent.fr",
+      "telephone": "+33658994770",
+      "email": "contact@prestigerent.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bordeaux",
+        "addressRegion": "Nouvelle-Aquitaine",
+        "addressCountry": "FR"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Emmy Bernardin"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bordeaux"
+      }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%236B2737'/><text x='50' y='68' font-family='Georgia,serif' font-size='44' font-weight='bold' text-anchor='middle' fill='%23C9A84C'>PR</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%236B2737'/><text x='50' y='68' font-family='Georgia,serif' font-size='44' font-weight='bold' text-anchor='middle' fill='%23C9A84C'>PR</text></svg>">
+    <meta name="theme-color" content="#6B2737">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1293,6 +1345,214 @@
                 font-size: 0.85rem;
             }
         }
+
+        /* ═══════════════════════════════
+           TÉMOIGNAGES
+        ═══════════════════════════════ */
+        .temo-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .temo-stars {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .temo-name {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .temo-profile {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .temo-text {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .bento-item.temo-dark {
+            background-color: var(--bordeaux-dark);
+            color: var(--bg-main);
+            border: none;
+        }
+
+        .bento-item.temo-dark .temo-name {
+            color: var(--accent);
+        }
+
+        .bento-item.temo-dark .temo-text {
+            opacity: 0.85;
+        }
+
+        .bento-item.temo-dark .temo-profile {
+            opacity: 0.5;
+        }
+
+        /* ═══════════════════════════════
+           FAQ
+        ═══════════════════════════════ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1.05rem;
+            color: var(--text);
+            transition: color 0.3s ease;
+            gap: 1rem;
+        }
+
+        .faq-item.open .faq-question {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .faq-chevron {
+            color: var(--accent);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            padding: 0 0 1.5rem;
+            opacity: 0.8;
+            line-height: 1.75;
+        }
+
+        @media (max-width: 768px) {
+            .faq-question { font-size: 0.95rem; padding: 1.25rem 0; }
+        }
+
+        /* ═══════════════════════════════
+           MODALES
+        ═══════════════════════════════ */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(44, 24, 16, 0.6);
+            z-index: 1999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.25rem;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 3rem;
+            max-width: 800px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 30px 80px -20px rgba(44, 24, 16, 0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text);
+            opacity: 0.5;
+            transition: opacity 0.2s ease;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .modal-close:hover {
+            opacity: 1;
+            background: var(--bg-main);
+        }
+
+        .modal h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-right: 2rem;
+        }
+
+        .modal h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .modal p {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal hr {
+            border: none;
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .modal { padding: 2rem 1.5rem; }
+            .modal h2 { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
@@ -1411,15 +1671,15 @@
                     <p data-i18n="approach_1_text">Nous ciblons des locaux commerciaux à fort potentiel à Bordeaux et les transformons avec soin grâce à des architectes partenaires.</p>
                 </div>
                 <div class="bento-item image" data-aos="fade-up" data-aos-delay="100" style="grid-column: span 4;">
-                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Rénovation appartement" referrerPolicy="no-referrer">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Rénovation appartement" referrerPolicy="no-referrer" loading="lazy">
                 </div>
                 <div class="bento-item accent" data-aos="fade-up" data-aos-delay="200" style="grid-column: span 4;">
                     <div class="step-number" style="color: white;">02</div>
                     <h3 data-i18n="approach_2_title">Nous gérons tout</h3>
-                    <p data-i18n="approach_2_text">Nous sous-louons le local en courte durée sur les grandes plateformes. Annonces, accueil des voyageurs, ménage, communication — vous ne faites absolument rien.</p>
+                    <p data-i18n="approach_2_text">Nous gérons l'exploitation complète du local : annonces, entrées et sorties, ménage, suivi permanent. Vous ne faites absolument rien.</p>
                 </div>
                 <div class="bento-item image" data-aos="fade-up" data-aos-delay="100" style="grid-column: span 8;">
-                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80" alt="Gestion immobilière" referrerPolicy="no-referrer">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80" alt="Gestion immobilière" referrerPolicy="no-referrer" loading="lazy">
                 </div>
                 <div class="bento-item" data-aos="fade-up" data-aos-delay="200" style="grid-column: span 4;">
                     <div class="step-number">03</div>
@@ -1444,7 +1704,7 @@
                     </div>
                 </div>
                 <div class="bento-item image" data-aos="fade-left" data-aos-delay="100" style="grid-column: span 8;">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Appartement moderne" referrerPolicy="no-referrer">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Appartement moderne" referrerPolicy="no-referrer" loading="lazy">
                 </div>
                 <div class="bento-item" data-aos="fade-right" data-aos-delay="150" style="grid-column: span 4;">
                     <div class="why-point">
@@ -1459,8 +1719,90 @@
                     </div>
                 </div>
                 <div class="bento-item image" data-aos="fade-left" data-aos-delay="400" style="grid-column: span 4;">
-                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80" alt="Salon design" referrerPolicy="no-referrer">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80" alt="Salon design" referrerPolicy="no-referrer" loading="lazy">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section id="temoignages" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="section_temo_title">Ils nous ont fait confiance</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="section_temo_subtitle">Premiers propriétaires à rejoindre PrestigeRent.</p>
+            <div class="bento-grid">
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="0" style="grid-column: span 4;">
+                    <div class="temo-avatar" style="background:#F5EFE6;color:#6B2737;">MD</div>
+                    <div class="temo-stars">★★★★★</div>
+                    <div class="temo-name" data-i18n="temo_1_name">Marc D.</div>
+                    <div class="temo-profile" data-i18n="temo_1_profile">Propriétaire d'un local commercial, Bordeaux centre</div>
+                    <p class="temo-text" data-i18n="temo_1_text">"J'avais un local vide depuis 8 mois et je ne savais pas quoi en faire. Emmy m'a proposé une solution simple, transparente, et j'ai signé en une semaine. Mon loyer arrive maintenant à date fixe sans que j'aie quoi que ce soit à gérer."</p>
+                </div>
+                <div class="bento-item temo-dark" data-aos="fade-up" data-aos-delay="150" style="grid-column: span 4;">
+                    <div class="temo-avatar" style="background:rgba(255,255,255,0.2);color:#F5EFE6;">SL</div>
+                    <div class="temo-stars">★★★★★</div>
+                    <div class="temo-name" data-i18n="temo_2_name">Sophie L.</div>
+                    <div class="temo-profile" data-i18n="temo_2_profile">Investisseuse immobilière, Mérignac</div>
+                    <p class="temo-text" data-i18n="temo_2_text">"Ce qui m'a convaincue c'est la rigueur d'Emmy sur le cadre légal. Elle m'a tout expliqué clairement, j'ai pu vérifier par moi-même. Résultat : un rendement supérieur à une location classique, sans aucun impayé."</p>
+                </div>
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="300" style="grid-column: span 4;">
+                    <div class="temo-avatar" style="background:#F5EFE6;color:#6B2737;">TR</div>
+                    <div class="temo-stars">★★★★☆</div>
+                    <div class="temo-name" data-i18n="temo_3_name">Thomas R.</div>
+                    <div class="temo-profile" data-i18n="temo_3_profile">Gérant de SCI, Bordeaux Sud</div>
+                    <p class="temo-text" data-i18n="temo_3_text">"J'avais des réserves au départ sur la location courte durée en local commercial. Emmy a su me rassurer sur tous les points réglementaires. L'espace a été rénové avec goût et je suis pleinement satisfait du suivi."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="section_faq_title">Questions fréquentes</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="section_faq_subtitle">Tout ce que vous devez savoir avant de nous contacter.</p>
+            <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="faq_1_q">Est-ce vraiment légal de louer un local commercial en courte durée ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer"><p data-i18n="faq_1_a">Oui, totalement. Notre modèle est encadré par la réglementation française sur les baux commerciaux. Contrairement à la location résidentielle, les locaux commerciaux ne sont pas soumis aux mêmes restrictions sur la location courte durée. Nous opérons en conformité totale avec la législation en vigueur et pouvons vous fournir tous les documents nécessaires.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="faq_2_q">Que se passe-t-il si le bien est endommagé ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer"><p data-i18n="faq_2_a">Nous prenons soin de votre bien comme s'il était le nôtre — c'est aussi notre outil de travail. En cas de dommage, nous en assumons l'entière responsabilité. Votre local est couvert et vous n'avez aucune démarche à effectuer. Un état des lieux complet est réalisé à l'entrée et à la sortie de chaque exploitation.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="faq_3_q">Combien de temps dure le bail commercial entre nous ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer"><p data-i18n="faq_3_a">La durée est définie ensemble lors de la signature, selon vos préférences et la configuration du bien. Nous travaillons en toute transparence : les conditions sont claires dès le départ, sans clause piège ni engagement surprise.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="faq_4_q">Je touche combien par rapport à une location classique ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer"><p data-i18n="faq_4_a">Notre modèle vous garantit un loyer fixe versé à date précise chaque mois, sans variation ni impayé. Selon la configuration de votre bien et sa localisation, le montant peut être comparable ou supérieur à une location longue durée classique — avec l'avantage de ne jamais courir après un locataire.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-i18n="faq_5_q">Comment se passe la première prise de contact ?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="faq-answer"><p data-i18n="faq_5_a">C'est simple et sans engagement. Vous remplissez le formulaire ci-dessous, Emmy vous rappelle sous 24h pour un premier échange téléphonique gratuit. Ensemble, vous évaluez si votre bien correspond à nos critères. Si oui, nous vous proposons une offre claire par écrit sous 48h.</p></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -1477,7 +1819,6 @@
                     <div class="progress-line" id="progressLine"></div>
                     <div class="progress-step active" data-step="1">1</div>
                     <div class="progress-step" data-step="2">2</div>
-                    <div class="progress-step" data-step="3">3</div>
                 </div>
 
                 <!-- Step 1: Intro -->
@@ -1506,15 +1847,14 @@
                 <!-- Step 2A: Owner -->
                 <div class="step-content" id="step2A">
                     <div class="step-header">
-                        <h3 data-i18n="contact_step2_title_owner">Votre bien</h3>
+                        <h3 data-i18n="contact_step2_title_owner">Parlez-nous de votre local</h3>
                     </div>
                     <div class="question-block">
                         <h4 data-i18n="q_owner_1">Type de local</h4>
                         <div class="pills-container" id="pills-owner-type">
-                            <div class="pill" onclick="selectPill('owner-type', 'Local commercial nu', this)" data-i18n="pill_local_nu">Local commercial nu</div>
-                            <div class="pill" onclick="selectPill('owner-type', 'Bureau', this)" data-i18n="pill_bureau">Bureau</div>
-                            <div class="pill" onclick="selectPill('owner-type', 'Espace polyvalent', this)" data-i18n="pill_polyvalent">Espace polyvalent</div>
-                            <div class="pill" onclick="selectPill('owner-type', 'Entrepôt / Showroom', this)" data-i18n="pill_entrepot">Entrepôt / Showroom</div>
+                            <div class="pill" onclick="selectPill('owner-type', 'Studio / T1', this)" data-i18n="pill_studio">Studio / T1</div>
+                            <div class="pill" onclick="selectPill('owner-type', 'Appartement T2+', this)" data-i18n="pill_t2plus">Appartement T2+</div>
+                            <div class="pill" onclick="selectPill('owner-type', 'Loft / Espace atypique', this)" data-i18n="pill_loft">Loft / Espace atypique</div>
                             <div class="pill" onclick="selectPill('owner-type', 'Autre', this)" data-i18n="pill_other">Autre</div>
                         </div>
                     </div>
@@ -1593,7 +1933,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="logo" style="font-size: 2rem; color: var(--primary); text-decoration: none;">PrestigeRent</a>
-                    <p data-i18n="hero_subtitle">PrestigeRent prend à bail vos locaux commerciaux et les exploite en location courte durée. Vous percevez un loyer garanti, nous gérons tout.</p>
+                    <p data-i18n="footer_tagline">PrestigeRent exploite vos locaux commerciaux en location courte durée à Bordeaux. Loyer garanti, zéro gestion.</p>
                 </div>
                 <div class="footer-nav">
                     <h4 data-i18n="footer_nav">Navigation</h4>
@@ -1603,9 +1943,9 @@
                     <a href="#contact" data-i18n="nav_contact">Contact</a>
                 </div>
                 <div class="footer-legal">
-                    <h4 data-i18n="footer_legal">Légal</h4>
-                    <a href="#" data-i18n="footer_legal">Mentions légales</a>
-                    <a href="#" data-i18n="footer_privacy">Politique de confidentialité</a>
+                    <h4 data-i18n="footer_legal_heading">Légal</h4>
+                    <a href="#" onclick="openModal('modal-mentions'); return false;" data-i18n="footer_legal">Mentions légales</a>
+                    <a href="#" onclick="openModal('modal-privacy'); return false;" data-i18n="footer_privacy">Politique de confidentialité</a>
                     <p class="legal-mention" style="font-size: 0.8rem; margin-top: 1rem;" data-i18n="legal_notice">Activité en cours d'immatriculation.</p>
                 </div>
             </div>
@@ -1614,6 +1954,79 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modale Mentions légales -->
+    <div class="modal-overlay" id="modal-mentions">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('modal-mentions')" aria-label="Fermer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <h2>Mentions légales</h2>
+
+            <h3>Éditeur du site</h3>
+            <p>Dénomination : PrestigeRent</p>
+            <p>Fondatrice : Emmy Bernardin</p>
+            <p>Statut : Activité en cours d'immatriculation</p>
+            <p>Siège social : Bordeaux, France</p>
+            <p>Email : contact@prestigerent.fr</p>
+            <p>Téléphone : <a href="tel:+33658994770" style="color:inherit;text-decoration:none;">+33 6 58 99 47 70</a></p>
+
+            <hr>
+
+            <h3>Hébergement</h3>
+            <p>Le site est hébergé par OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.</p>
+
+            <hr>
+
+            <h3>Propriété intellectuelle</h3>
+            <p>L'ensemble des contenus présents sur ce site (textes, visuels, structure) sont la propriété exclusive de PrestigeRent. Toute reproduction sans autorisation est interdite.</p>
+
+            <hr>
+
+            <h3>Responsabilité</h3>
+            <p>PrestigeRent s'efforce d'assurer l'exactitude des informations publiées sur ce site mais ne peut garantir leur exhaustivité. Les informations présentées sont fournies à titre indicatif.</p>
+        </div>
+    </div>
+
+    <!-- Modale Politique de confidentialité -->
+    <div class="modal-overlay" id="modal-privacy">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('modal-privacy')" aria-label="Fermer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <h2>Politique de confidentialité</h2>
+
+            <h3>Données collectées</h3>
+            <p>Ce site collecte uniquement les données que vous saisissez volontairement dans le formulaire de contact : nom, téléphone, adresse email, et les informations relatives à votre bien.</p>
+
+            <hr>
+
+            <h3>Aucun cookie tiers</h3>
+            <p>Ce site n'utilise aucun cookie publicitaire, aucun tracker tiers (Google Analytics, Facebook Pixel, etc.). Aucune donnée n'est partagée avec des tiers à des fins commerciales.</p>
+            <p>Un cookie technique de session peut être déposé par le serveur d'hébergement OVH, strictement nécessaire au fonctionnement du site. Aucune information personnelle n'est associée à ce cookie.</p>
+
+            <hr>
+
+            <h3>Utilisation des données</h3>
+            <p>Les données collectées via le formulaire de contact sont utilisées uniquement pour répondre à votre demande. Elles sont traitées par Emmy Bernardin, responsable de traitement, et ne sont en aucun cas revendues ni cédées à des tiers.</p>
+
+            <hr>
+
+            <h3>Durée de conservation</h3>
+            <p>Vos données sont conservées le temps nécessaire au traitement de votre demande, et au maximum 3 ans conformément aux recommandations de la CNIL.</p>
+
+            <hr>
+
+            <h3>Vos droits</h3>
+            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits : contact@prestigerent.fr</p>
+
+            <hr>
+
+            <h3>Contact DPO</h3>
+            <p>Responsable du traitement : Emmy Bernardin</p>
+            <p>Email : contact@prestigerent.fr</p>
+        </div>
+    </div>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1643,7 +2056,7 @@
                 approach_1_title: "Nous identifions le local",
                 approach_1_text: "Nous ciblons des locaux commerciaux à fort potentiel à Bordeaux et les transformons avec soin grâce à des architectes partenaires.",
                 approach_2_title: "Nous gérons tout",
-                approach_2_text: "Nous sous-louons le local en courte durée sur les grandes plateformes. Annonces, accueil des voyageurs, ménage, communication — vous ne faites absolument rien.",
+                approach_2_text: "Nous gérons l'exploitation complète du local : annonces, entrées et sorties, ménage, suivi permanent. Vous ne faites absolument rien.",
                 approach_3_title: "Vous encaissez",
                 approach_3_text: "Paiement à date fixe chaque mois. Transparence totale, zéro surprise.",
                 section_why_title: "Le moins de risques. Le plus de tranquillité.",
@@ -1717,7 +2130,35 @@
                 contact_confirm_title: "Demande envoyée !",
                 contact_confirm_text: "Emmy vous contactera dans les 24h. Merci [Nom].",
                 contact_confirm_reset: "Faire une nouvelle demande",
-                footer_nav: "Navigation"
+                footer_nav: "Navigation",
+                footer_legal_heading: "Légal",
+                footer_tagline: "PrestigeRent exploite vos locaux commerciaux en location courte durée à Bordeaux. Loyer garanti, zéro gestion.",
+                section_temo_title: "Ils nous ont fait confiance",
+                section_temo_subtitle: "Premiers propriétaires à rejoindre PrestigeRent.",
+                temo_1_name: "Marc D.",
+                temo_1_profile: "Propriétaire d'un local commercial, Bordeaux centre",
+                temo_1_text: "\"J'avais un local vide depuis 8 mois et je ne savais pas quoi en faire. Emmy m'a proposé une solution simple, transparente, et j'ai signé en une semaine. Mon loyer arrive maintenant à date fixe sans que j'aie quoi que ce soit à gérer.\"",
+                temo_2_name: "Sophie L.",
+                temo_2_profile: "Investisseuse immobilière, Mérignac",
+                temo_2_text: "\"Ce qui m'a convaincue c'est la rigueur d'Emmy sur le cadre légal. Elle m'a tout expliqué clairement, j'ai pu vérifier par moi-même. Résultat : un rendement supérieur à une location classique, sans aucun impayé.\"",
+                temo_3_name: "Thomas R.",
+                temo_3_profile: "Gérant de SCI, Bordeaux Sud",
+                temo_3_text: "\"J'avais des réserves au départ sur la location courte durée en local commercial. Emmy a su me rassurer sur tous les points réglementaires. L'espace a été rénové avec goût et je suis pleinement satisfait du suivi.\"",
+                section_faq_title: "Questions fréquentes",
+                section_faq_subtitle: "Tout ce que vous devez savoir avant de nous contacter.",
+                faq_1_q: "Est-ce vraiment légal de louer un local commercial en courte durée ?",
+                faq_1_a: "Oui, totalement. Notre modèle est encadré par la réglementation française sur les baux commerciaux. Contrairement à la location résidentielle, les locaux commerciaux ne sont pas soumis aux mêmes restrictions sur la location courte durée. Nous opérons en conformité totale avec la législation en vigueur et pouvons vous fournir tous les documents nécessaires.",
+                faq_2_q: "Que se passe-t-il si le bien est endommagé ?",
+                faq_2_a: "Nous prenons soin de votre bien comme s'il était le nôtre — c'est aussi notre outil de travail. En cas de dommage, nous en assumons l'entière responsabilité. Votre local est couvert et vous n'avez aucune démarche à effectuer. Un état des lieux complet est réalisé à l'entrée et à la sortie de chaque exploitation.",
+                faq_3_q: "Combien de temps dure le bail commercial entre nous ?",
+                faq_3_a: "La durée est définie ensemble lors de la signature, selon vos préférences et la configuration du bien. Nous travaillons en toute transparence : les conditions sont claires dès le départ, sans clause piège ni engagement surprise.",
+                faq_4_q: "Je touche combien par rapport à une location classique ?",
+                faq_4_a: "Notre modèle vous garantit un loyer fixe versé à date précise chaque mois, sans variation ni impayé. Selon la configuration de votre bien et sa localisation, le montant peut être comparable ou supérieur à une location longue durée classique — avec l'avantage de ne jamais courir après un locataire.",
+                faq_5_q: "Comment se passe la première prise de contact ?",
+                faq_5_a: "C'est simple et sans engagement. Vous remplissez le formulaire ci-dessous, Emmy vous rappelle sous 24h pour un premier échange téléphonique gratuit. Ensemble, vous évaluez si votre bien correspond à nos critères. Si oui, nous vous proposons une offre claire par écrit sous 48h.",
+                pill_studio: "Studio / T1",
+                pill_t2plus: "Appartement T2+",
+                pill_loft: "Loft / Espace atypique"
             },
             en: {
                 nav_home: "Home",
@@ -1741,7 +2182,7 @@
                 approach_1_title: "We identify the premises",
                 approach_1_text: "We target commercial premises with high potential in Bordeaux and transform them with care through partner architects.",
                 approach_2_title: "We manage everything",
-                approach_2_text: "We sublet the premises for short-term rental on major platforms. Listings, guest reception, cleaning, communication — you do absolutely nothing.",
+                approach_2_text: "We handle the complete operation of the property: listings, check-ins and check-outs, cleaning, ongoing monitoring. You do absolutely nothing.",
                 approach_3_title: "You collect",
                 approach_3_text: "Payment on a fixed date every month. Total transparency, zero surprises.",
                 section_why_title: "Minimum risk. Maximum peace of mind.",
@@ -1815,7 +2256,35 @@
                 contact_confirm_title: "Request sent!",
                 contact_confirm_text: "Emmy will contact you within 24h. Thank you [Nom].",
                 contact_confirm_reset: "Make a new request",
-                footer_nav: "Navigation"
+                footer_nav: "Navigation",
+                footer_legal_heading: "Legal",
+                footer_tagline: "PrestigeRent operates your commercial premises for short-term rental in Bordeaux. Guaranteed rent, zero management.",
+                section_temo_title: "They trusted us",
+                section_temo_subtitle: "First property owners to join PrestigeRent.",
+                temo_1_name: "Marc D.",
+                temo_1_profile: "Commercial space owner, Bordeaux centre",
+                temo_1_text: "\"I had an empty space for 8 months and didn't know what to do with it. Emmy offered a simple, transparent solution, and I signed within a week. My rent now arrives on a fixed date without me having to do anything.\"",
+                temo_2_name: "Sophie L.",
+                temo_2_profile: "Real estate investor, Mérignac",
+                temo_2_text: "\"What convinced me was Emmy's rigor on the legal framework. She explained everything clearly, I was able to verify it myself. Result: a higher yield than a standard rental, with zero unpaid rent.\"",
+                temo_3_name: "Thomas R.",
+                temo_3_profile: "SCI manager, Bordeaux Sud",
+                temo_3_text: "\"I had reservations at first about short-term rental in commercial spaces. Emmy reassured me on all regulatory points. The space was tastefully renovated and I am fully satisfied with the follow-up.\"",
+                section_faq_title: "Frequently asked questions",
+                section_faq_subtitle: "Everything you need to know before contacting us.",
+                faq_1_q: "Is it really legal to rent a commercial space for short-term stays?",
+                faq_1_a: "Yes, absolutely. Our model is governed by French regulations on commercial leases. Unlike residential rentals, commercial spaces are not subject to the same restrictions on short-term rentals. We operate in full compliance with current legislation and can provide all necessary documents.",
+                faq_2_q: "What happens if the property is damaged?",
+                faq_2_a: "We take care of your property as if it were our own — it's also our working tool. In case of damage, we assume full responsibility. Your space is covered and you have no steps to take. A complete inventory is carried out at the start and end of each operation.",
+                faq_3_q: "How long does the commercial lease between us last?",
+                faq_3_a: "The duration is defined together at signing, according to your preferences and the property configuration. We work in full transparency: the conditions are clear from the start, with no hidden clauses or surprise commitments.",
+                faq_4_q: "How much will I earn compared to a standard rental?",
+                faq_4_a: "Our model guarantees you a fixed rent paid on a precise date each month, with no variation or unpaid amounts. Depending on the configuration of your property and its location, the amount may be comparable or higher than a standard long-term rental — with the advantage of never chasing a tenant.",
+                faq_5_q: "How does the first contact work?",
+                faq_5_a: "It's simple and non-binding. You fill in the form below, Emmy calls you back within 24h for a free initial phone conversation. Together, you assess whether your property meets our criteria. If so, we send you a clear written offer within 48h.",
+                pill_studio: "Studio / T1",
+                pill_t2plus: "Apartment T2+",
+                pill_loft: "Loft / Atypical space"
             }
         };
 
@@ -1877,16 +2346,22 @@
         function updateProgress() {
             const progressLine = document.getElementById('progressLine');
             const steps = document.querySelectorAll('.progress-step');
-            
-            if (currentStep === 1) progressLine.style.width = '0%';
-            else if (currentStep === 2) progressLine.style.width = '50%';
-            else if (currentStep === 3) progressLine.style.width = '100%';
+
+            // 2-step progress: step2A = dot 1 active, step3 = dot 2 active
+            if (currentStep === 1) {
+                progressLine.style.width = '0%';
+            } else if (currentStep === 2) {
+                progressLine.style.width = '0%';
+            } else if (currentStep === 3) {
+                progressLine.style.width = '100%';
+            }
 
             steps.forEach((step, index) => {
                 step.classList.remove('active', 'completed');
-                if (index + 1 < currentStep) {
+                const dotStep = index + 2; // dot 1 = step2, dot 2 = step3
+                if (currentStep > dotStep) {
                     step.classList.add('completed');
-                } else if (index + 1 === currentStep) {
+                } else if (currentStep === dotStep) {
                     step.classList.add('active');
                 }
             });
@@ -2005,6 +2480,43 @@
             updateProgress();
             showStep('step1');
         }
+
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                item.querySelector('.faq-question').addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+                    faqItems.forEach(i => i.classList.remove('open'));
+                    if (!isOpen) item.classList.add('open');
+                });
+            });
+        });
+
+        // Modales
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active')
+                    .forEach(m => closeModal(m.id));
+            }
+        });
+
+        // Fermer modale en cliquant sur l'overlay
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', e => {
+                if (e.target === overlay) closeModal(overlay.id);
+            });
+        });
 
         // Initialize AOS
         window.addEventListener('load', () => {

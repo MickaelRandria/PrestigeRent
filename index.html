@@ -1826,12 +1826,20 @@
                         <h3 data-i18n="contact_step2_title_owner">Parlez-nous de votre local</h3>
                     </div>
                     <div class="question-block">
-                        <h4 data-i18n="q_owner_1">Type de local</h4>
+                        <h4 data-i18n="q_owner_1">Nombre de bureaux</h4>
                         <div class="pills-container" id="pills-owner-type">
-                            <div class="pill" onclick="selectPill('owner-type', 'Studio / T1', this)" data-i18n="pill_studio">Studio / T1</div>
-                            <div class="pill" onclick="selectPill('owner-type', 'Appartement T2+', this)" data-i18n="pill_t2plus">Appartement T2+</div>
-                            <div class="pill" onclick="selectPill('owner-type', 'Loft / Espace atypique', this)" data-i18n="pill_loft">Loft / Espace atypique</div>
-                            <div class="pill" onclick="selectPill('owner-type', 'Autre', this)" data-i18n="pill_other">Autre</div>
+                            <div class="pill" onclick="selectPill('owner-type', '1 bureau', this)" data-i18n="pill_bureau_1">1 bureau</div>
+                            <div class="pill" onclick="selectPill('owner-type', '2 bureaux', this)" data-i18n="pill_bureau_2">2 bureaux</div>
+                            <div class="pill" onclick="selectPill('owner-type', '3 à 4 bureaux', this)" data-i18n="pill_bureau_3">3 à 4 bureaux</div>
+                            <div class="pill" onclick="selectPill('owner-type', '5 bureaux et plus', this)" data-i18n="pill_bureau_4">5 bureaux et plus</div>
+                        </div>
+                    </div>
+                    <div class="question-block">
+                        <h4 data-i18n="q_owner_sanitaires">Le local dispose-t-il de sanitaires ?</h4>
+                        <div class="pills-container" id="pills-owner-sanitaires">
+                            <div class="pill" onclick="selectPill('owner-sanitaires', 'WC uniquement', this)" data-i18n="pill_san_wc">WC uniquement</div>
+                            <div class="pill" onclick="selectPill('owner-sanitaires', 'WC + Douche', this)" data-i18n="pill_san_wc_douche">WC + Douche</div>
+                            <div class="pill" onclick="selectPill('owner-sanitaires', 'Aucun sanitaire', this)" data-i18n="pill_san_none">Aucun sanitaire</div>
                         </div>
                     </div>
                     <div class="question-block">
@@ -2081,7 +2089,8 @@
                 contact_step1_cta: "Commencer ma demande →",
                 contact_step2_title_owner: "Votre bien",
                 contact_step2_title_tenant: "Votre besoin",
-                q_owner_1: "Type de local",
+                q_owner_1: "Nombre de bureaux",
+                q_owner_sanitaires: "Le local dispose-t-il de sanitaires ?",
                 q_owner_2: "Superficie approximative",
                 q_owner_3: "Dans quel délai souhaitez-vous commencer ?",
                 q_tenant_1: "Type de séjour",
@@ -2136,9 +2145,13 @@
                 faq_5_a: "C'est l'inverse. Un ménage professionnel est effectué après chaque utilisation, et le moindre défaut est identifié et corrigé immédiatement. Les biens gérés par PrestigeRent sont mieux entretenus que dans une location classique. Votre local ne s'use pas — il se valorise.",
                 faq_6_q: "Comment mon bien est-il protégé en cas de sinistre ?",
                 faq_6_a: "PrestigeRent souscrit une assurance multirisque via Allianz couvrant votre local pour toute la durée du bail. En cas de dommage, c'est notre assurance qui intervient — aucune démarche de votre part. Votre patrimoine est protégé dès la signature.",
-                pill_studio: "Studio / T1",
-                pill_t2plus: "Appartement T2+",
-                pill_loft: "Loft / Espace atypique"
+                pill_bureau_1: "1 bureau",
+                pill_bureau_2: "2 bureaux",
+                pill_bureau_3: "3 à 4 bureaux",
+                pill_bureau_4: "5 bureaux et plus",
+                pill_san_wc: "WC uniquement",
+                pill_san_wc_douche: "WC + Douche",
+                pill_san_none: "Aucun sanitaire"
             },
             en: {
                 nav_home: "Home",
@@ -2198,7 +2211,8 @@
                 contact_step1_cta: "Start my request →",
                 contact_step2_title_owner: "Your property",
                 contact_step2_title_tenant: "Your need",
-                q_owner_1: "Type of property",
+                q_owner_1: "Number of offices",
+                q_owner_sanitaires: "Does the property have sanitary facilities?",
                 q_owner_2: "Approximate area",
                 q_owner_3: "When do you want to start?",
                 q_tenant_1: "Type of stay",
@@ -2253,9 +2267,13 @@
                 faq_5_a: "Quite the opposite. Professional cleaning is carried out after every use, and the slightest defect is identified and corrected immediately. Properties managed by PrestigeRent are better maintained than in a standard rental. Your property doesn't wear out — it gains value.",
                 faq_6_q: "How is my property protected in case of a claim?",
                 faq_6_a: "PrestigeRent takes out comprehensive insurance through Allianz covering your property for the entire lease duration. In case of damage, our insurance handles everything — no steps required from you. Your assets are protected from the moment the lease is signed.",
-                pill_studio: "Studio / T1",
-                pill_t2plus: "Apartment T2+",
-                pill_loft: "Loft / Atypical space"
+                pill_bureau_1: "1 office",
+                pill_bureau_2: "2 offices",
+                pill_bureau_3: "3 to 4 offices",
+                pill_bureau_4: "5 offices or more",
+                pill_san_wc: "WC only",
+                pill_san_wc_douche: "WC + Shower",
+                pill_san_none: "No sanitary facilities"
             }
         };
 
@@ -2307,6 +2325,7 @@
         let contactData = {
             profile: '',
             localType: '',
+            sanitaires: '',
             superficie: '',
             delai: '',
             nom: '',
@@ -2365,11 +2384,12 @@
 
             // Update Data
             if (group === 'owner-type') contactData.localType = value;
+            if (group === 'owner-sanitaires') contactData.sanitaires = value;
             if (group === 'owner-area') contactData.superficie = value;
             if (group === 'owner-time') contactData.delai = value;
 
             // Check validation
-            if (contactData.localType && contactData.superficie && contactData.delai) {
+            if (contactData.localType && contactData.sanitaires && contactData.superficie && contactData.delai) {
                 document.getElementById('btnNext2A').disabled = false;
             }
         }
@@ -2387,6 +2407,7 @@
                 // Populate chips
                 const chipsHtml = `
                     <div class="summary-chip">${contactData.localType}</div>
+                    <div class="summary-chip">${contactData.sanitaires}</div>
                     <div class="summary-chip">${contactData.superficie}</div>
                     <div class="summary-chip">${contactData.delai}</div>
                 `;
@@ -2425,6 +2446,7 @@
             // ⚠️ Remplace les deux IDs ci-dessous par tes identifiants EmailJS
             emailjs.send("service_0vo8m5u", "template_jaf44m8", {
                 type_local:  contactData.localType,
+                sanitaires:  contactData.sanitaires,
                 superficie:  contactData.superficie,
                 delai:       contactData.delai,
                 nom:         contactData.nom,
@@ -2436,7 +2458,7 @@
 
         function resetStepper() {
             contactData = {
-                profile: '', localType: '', superficie: '', delai: '', nom: '', telephone: '', email: ''
+                profile: '', localType: '', sanitaires: '', superficie: '', delai: '', nom: '', telephone: '', email: ''
             };
             document.getElementById('finalForm').reset();
             document.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
